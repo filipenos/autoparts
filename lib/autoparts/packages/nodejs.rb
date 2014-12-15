@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class Nodejs < Package
       name 'nodejs'
-      version '0.10.28'
+      version '0.10.33'
       description "Node.JS: A platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications"
       category Category::PROGRAMMING_LANGUAGES
 
-      source_url 'http://nodejs.org/dist/v0.10.28/node-v0.10.28-linux-x64.tar.gz'
-      source_sha1 '4b9cf9437decea3d9913b694ea2e9b0a06ced2dd'
+      source_url 'http://nodejs.org/dist/v0.10.33/node-v0.10.33-linux-x64.tar.gz'
+      source_sha1 '4eba69caf7368d7f388700eb02996f85b06f457a'
       source_filetype 'tar.gz'
 
       def install

@@ -5,12 +5,12 @@ module Autoparts
   module Packages
     class GoogleCloudSDK < Package
       name 'googlecloudsdk'
-      version '0.9.25'
+      version '0.9.32'
       description 'Google Cloud SDK: Tools and libraries to easily create and manage resources on Google Cloud Platform'
       category Category::UTILITIES
 
       source_url 'https://dl.google.com/dl/cloudsdk/release/google-cloud-sdk.tar.gz'
-      source_sha1 '1c8194f38a995f0db31b1f0a306de04b7fe107fd'
+      source_sha1 'fea93c100de8d2c21d02962467e6a5154230de8b'
       source_filetype 'tar.gz'
 
       def install
@@ -35,7 +35,7 @@ module Autoparts
         # We put the bin folder from Google Cloud SDK into PATH
         # so new components installed can work properly.
         [
-          "export PATH=$PATH:#{prefix_path}/bin"
+          "export PATH=$PATH:#{bin_path}"
         ]
       end
 
